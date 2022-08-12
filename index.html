@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Description</p>
+    <form id="survey-form">
+      <label id="name-label"
+        >Name
+        <input placeholder="Victor Candido" id="name" type="text" required
+      /></label>
+      <label id="email-label"
+        >E-mail
+        <input
+          placeholder="victorjrcandido@gmail.com"
+          id="email"
+          type="email"
+          required
+      /></label>
+      <label id="number-label"
+        >Number
+        <input
+          placeholder="34988999999"
+          id="number"
+          type="number"
+          required
+          min="8"
+          max="20"
+      /></label>
+      <label
+        >Please select<select id="dropdown">
+          <option>Select</option>
+          <option>Option</option>
+          <option>Option 02</option>
+        </select></label
+      >
+      <label
+        >Radio 01<input class="inline" type="radio" name="radio" value="value"
+      /></label>
+      <label
+        >Radio 02<input class="inline" type="radio" name="radio" value="value"
+      /></label>
+      <label>Yes<input type="checkbox" name="checkbox" value="check" /></label>
+      <label>No<input type="checkbox" name="checkbox" value="check" /></label>
+      <label id="text-label"
+        >Your text here<textarea
+          name="text-area"
+          rows="3"
+          cols="30"
+          placeholder="Example of text..."
+        ></textarea>
+      </label>
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
